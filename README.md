@@ -40,19 +40,17 @@ git fetch --all --tags --prune
 git checkout tags/v1.5.1
 ```
 
-- Follow the documentation to build [here](https://github.com/tensorflow/tensorflow/blob/v1.5.1/tensorflow/contrib/lite/g3doc/ios.md)
+- Follow the documentation to build [here](https://github.com/tensorflow/tensorflow/blob/v1.5.1/tensorflow/contrib/lite/g3doc/ios.md), skipping the last section titled "Using in your own application"
 
 ## 5. Link TensorFlow Lite
 
-- `Open` YourProjectName.xcworkspace instead of YourProjectName.xcodeproj
+- Open RNTFLiteExample.xcworkspace instead of RNTFLiteExample.xcodeproj
 
-- In your apps `Libraries folder` find `RNTFLite.xcodeproj`, then in "Build Settings" modify `TF_ROOT` to fit your `Tensorflow v1.5.1` path
+- In the Xcode project's "Libraries" folder find `RNTFLite.xcodeproj`, then in "Build Settings" modify `TF_ROOT` to fit your `Tensorflow v1.5.1` path
 
 - Add the library at `$(TF_ROOT)/tensorflow/contrib/lite/gen/lib/libtensorflow-lite.a` to your linking build stage
 
 ## 7. Run App
-
-- Now, you can use `react-native-tflite` in your react-native app
 
 ```bash
 react-native run-ios
