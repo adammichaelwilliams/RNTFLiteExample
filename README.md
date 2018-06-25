@@ -57,6 +57,7 @@ react-native run-ios
 ```
 
 Example screenshot:
+
 ![Water Bottle Detection](https://raw.githubusercontent.com/kainolophobia/RNTFLiteExample/master/images/waterbottle.png)
 
 
