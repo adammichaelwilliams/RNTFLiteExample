@@ -56,6 +56,10 @@ git checkout tags/v1.5.1
 react-native run-ios
 ```
 
+Example screenshot:
+![Water Bottle Detection](https://raw.githubusercontent.com/kainolophobia/RNTFLiteExample/master/images/waterbottle.png)
+
+
 # Notes
 
 The `.tflite` model and associated labels are hackiliy stored at the project's root and hardcoded in `RNTFLiteView.mm` within the `RNTFLite.xcodeproj` Library.
