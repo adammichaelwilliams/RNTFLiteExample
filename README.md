@@ -53,7 +53,7 @@ git checkout tags/v1.5.1
 ## 6. Run App
 
 ```bash
-react-native run-ios
+react-native run-ios --device "[DEVICE NAME]"
 ```
 
 Example screenshot:
