@@ -23,7 +23,6 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		660383D620E0A0A400B44C90 /* mobilenet_quant_v1_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 660383D420E0A0A300B44C90 /* mobilenet_quant_v1_224.tflite */; };
 		660383D720E0A0A400B44C90 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 660383D520E0A0A400B44C90 /* labels.txt */; };
-		660383D820E177B400B44C90 /* libtensorflow-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6603838820E0531600B44C90 /* libtensorflow-lite.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A3D41A50F1D940759CD976C9 /* libRNTFLite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D3C41024947E79827B7C3 /* libRNTFLite.a */; };
 		A75C1FF81F052C151EAF5070 /* libPods-RNTFLiteExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A1DF893E9952AB279719CE /* libPods-RNTFLiteExample.a */; };
@@ -338,7 +337,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				660383D820E177B400B44C90 /* libtensorflow-lite.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -1056,21 +1054,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tflite/ios",
-					"$(TF_ROOT)/tensorflow/contrib/lite/downloads",
-					"$(TF_ROOT)/tensorflow/contrib/lite/downloads/flatbuffers/include",
-					"$(TF_ROOT)",
 				);
 				INFOPLIST_FILE = RNTFLiteExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(TF_ROOT)/tensorflow/contrib/lite/gen/lib";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = RNTFLiteExample;
-				TF_ROOT = /Users/adam/tensorflow;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1086,21 +1080,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tflite/ios",
-					"$(TF_ROOT)/tensorflow/contrib/lite/downloads",
-					"$(TF_ROOT)/tensorflow/contrib/lite/downloads/flatbuffers/include",
-					"$(TF_ROOT)",
 				);
 				INFOPLIST_FILE = RNTFLiteExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(TF_ROOT)/tensorflow/contrib/lite/gen/lib";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = RNTFLiteExample;
-				TF_ROOT = /Users/adam/tensorflow;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
