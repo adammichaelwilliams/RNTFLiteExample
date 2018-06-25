@@ -50,7 +50,7 @@ git checkout tags/v1.5.1
 
 - Add the library at `$(TF_ROOT)/tensorflow/contrib/lite/gen/lib/libtensorflow-lite.a` to your linking build stage
 
-## 7. Run App
+## 6. Run App
 
 ```bash
 react-native run-ios
@@ -63,6 +63,8 @@ The `.tflite` model and associated labels are hackiliy stored at the project's r
 To add your own model/labels, right-click the `RNTFLiteExample` project and select "Add files to project..."
 
 Make sure to update the associated model/label filepaths in the `RNTFLiteView.mm` file.
+
+Additionally, this can break in the simulator. Please use an actual device to test.
 
 # Support
 
